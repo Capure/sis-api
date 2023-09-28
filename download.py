@@ -1,5 +1,8 @@
 import requests
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 LOGIN_URL = "https://logowanie.pg.edu.pl/login?service=https%3a%2f%2fsis.eti.pg.edu.pl%2f"
 USERNAME = os.getenv("USERNAME")
